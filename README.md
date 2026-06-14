@@ -17,6 +17,7 @@ Important iOS constraints:
 - `Models/` - Place bundled translation model files here.
 - `Packaging/ExportOptions-AdHoc.plist` - Xcode export settings for a transferable `.ipa`.
 - `Scripts/build_signed_ipa.sh` - macOS command-line build script that archives and exports a signed `.ipa`.
+- `.github/workflows/build-signed-ipa.yml` - GitHub Actions cloud build for creating a signed `.ipa` without owning a Mac.
 - `GitHubPages/` - GitHub Pages installer site and OTA manifest template.
 - `Profiles/LocalLensTranslate-GitHubInstall.mobileconfig` - Settings-installable profile that adds a Home Screen installer link.
 - `DIRECT_TRANSFER.md` - Steps to create and transfer the `.ipa` to an iPhone.
@@ -41,6 +42,8 @@ TEAM_ID=YOUR_TEAM_ID APP_BUNDLE_ID=com.yourcompany.locallenstranslate sh Scripts
 Then copy the exported `.ipa` from `dist/` to the device with Apple Configurator, Finder device management, or Xcode's Devices window.
 
 For GitHub-hosted installation, replace `IamFearlessAI` in `GitHubPages/` and `Profiles/`, publish GitHub Pages, upload the signed IPA to a GitHub release as `LocalLensTranslate.ipa`, then install the profile from Settings.
+
+To avoid using your own Mac, configure the secrets in `NO_MAC_BUILD.md`, then run the `Build signed IPA` workflow in GitHub Actions.
 
 ## License
 
