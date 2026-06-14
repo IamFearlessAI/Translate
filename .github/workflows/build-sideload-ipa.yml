@@ -1,0 +1,68 @@
+name: Build sideload IPA
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: "Upload unsigned sideload IPA and SideStore source to the latest GitHub release"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    env:
+      APP_BUNDLE_ID: com.iamfearlessai.locallenstranslate
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build app without Apple distribution signing
+        run: |
+          set -euo pipefail
+          rm -rf build dist
+          mkdir -p build dist
+
+          xcodebuild \
+            -project LocalLensTranslate.xcodeproj \
+            -scheme LocalLensTranslate \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath build/DerivedData \
+            APP_BUNDLE_ID="$APP_BUNDLE_ID" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            clean build
+
+          APP_PATH="$(find build/DerivedData/Build/Products/Release-iphoneos -maxdepth 1 -name 'LocalLensTranslate.app' -print -quit)"
+          test -n "$APP_PATH" || (echo "LocalLensTranslate.app not found" && exit 1)
+
+          mkdir -p build/Payload
+          cp -R "$APP_PATH" build/Payload/
+          (cd build && zip -qry ../dist/LocalLensTranslate-SideStore.ipa Payload)
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LocalLensTranslate-SideStore.ipa
+          path: dist/LocalLensTranslate-SideStore.ipa
+
+      - name: Publish latest release asset
+        if: ${{ inputs.publish_release == 'true' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest LocalLens Translate IPA
+          body: "Unsigned IPA for SideStore/AltStore local signing."
+          files: dist/LocalLensTranslate-SideStore.ipa
+          make_latest: true
+

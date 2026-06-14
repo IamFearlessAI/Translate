@@ -18,8 +18,10 @@ Important iOS constraints:
 - `Packaging/ExportOptions-AdHoc.plist` - Xcode export settings for a transferable `.ipa`.
 - `Scripts/build_signed_ipa.sh` - macOS command-line build script that archives and exports a signed `.ipa`.
 - `.github/workflows/build-signed-ipa.yml` - GitHub Actions cloud build for creating a signed `.ipa` without owning a Mac.
+- `.github/workflows/build-sideload-ipa.yml` - GitHub Actions cloud build for creating a SideStore/AltStore IPA.
 - `GitHubPages/` - GitHub Pages installer site and OTA manifest template.
 - `Profiles/LocalLensTranslate-GitHubInstall.mobileconfig` - Settings-installable profile that adds a Home Screen installer link.
+- `SIDELOADING.md` - SideStore and AltStore setup notes.
 - `DIRECT_TRANSFER.md` - Steps to create and transfer the `.ipa` to an iPhone.
 
 ## Build
@@ -44,6 +46,8 @@ Then copy the exported `.ipa` from `dist/` to the device with Apple Configurator
 For GitHub-hosted installation, replace `IamFearlessAI` in `GitHubPages/` and `Profiles/`, publish GitHub Pages, upload the signed IPA to a GitHub release as `LocalLensTranslate.ipa`, then install the profile from Settings.
 
 To avoid using your own Mac, configure the secrets in `NO_MAC_BUILD.md`, then run the `Build signed IPA` workflow in GitHub Actions.
+
+For SideStore or AltStore, run the `Build sideload IPA` workflow and add `https://iamfearlessai.github.io/Translate/source.json` as a source.
 
 ## License
 

@@ -1,0 +1,34 @@
+{
+  "name": "IamFearlessAI Apps",
+  "identifier": "com.iamfearlessai.apps",
+  "sourceURL": "https://iamfearlessai.github.io/Translate/source.json",
+  "apps": [
+    {
+      "name": "LocalLens Translate",
+      "bundleIdentifier": "com.iamfearlessai.locallenstranslate",
+      "developerName": "IamFearlessAI",
+      "subtitle": "Local translation app with OCR and Share Extension",
+      "localizedDescription": "LocalLens Translate is an iOS translation app scaffold that uses local OCR and a replaceable on-device translation engine. This IPA is intended for SideStore or AltStore sideloading, where the app is signed locally with your Apple ID.",
+      "iconURL": "https://iamfearlessai.github.io/Translate/icon.png",
+      "tintColor": "0A7AFF",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "1",
+          "date": "2026-06-14",
+          "downloadURL": "https://github.com/IamFearlessAI/Translate/releases/latest/download/LocalLensTranslate-SideStore.ipa",
+          "localizedDescription": "Initial SideStore-compatible build."
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryUsageDescription": "LocalLens reads images you choose so it can extract and translate text on this device."
+        }
+      }
+    }
+  ],
+  "news": []
+}
+
