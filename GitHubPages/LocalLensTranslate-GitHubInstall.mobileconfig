@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <false/>
+            <key>Icon</key>
+            <data></data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Install LocalLens</string>
+            <key>PayloadDescription</key>
+            <string>Adds a Home Screen installer link for LocalLens Translate.</string>
+            <key>PayloadDisplayName</key>
+            <string>LocalLens Installer Web Clip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.locallens.install.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>6C585E54-C486-4F19-B2FA-F4E247E86E63</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <false/>
+            <key>URL</key>
+            <string>https://IamFearlessAI.github.io/Translate/</string>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>Installs a Settings profile that adds a Home Screen link to the GitHub-hosted LocalLens Translate installer.</string>
+    <key>PayloadDisplayName</key>
+    <string>LocalLens Translate GitHub Installer</string>
+    <key>PayloadIdentifier</key>
+    <string>com.locallens.install.profile</string>
+    <key>PayloadOrganization</key>
+    <string>LocalLens</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>F35F3CD1-873B-4879-A0E8-E8B24F3A4456</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+
+

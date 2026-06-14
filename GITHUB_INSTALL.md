@@ -28,7 +28,15 @@ TEAM_ID=YOUR_TEAM_ID APP_BUNDLE_ID=com.yourcompany.locallenstranslate sh Scripts
 LocalLensTranslate.ipa
 ```
 
-6. On iPhone, install:
+6. On iPhone, install the profile from the GitHub Pages URL:
+
+```text
+https://iamfearlessai.github.io/Translate/LocalLensTranslate-GitHubInstall.mobileconfig
+```
+
+If Safari only downloads the file, open Settings and check `General > VPN & Device Management`.
+
+The source profile is also in:
 
 ```text
 Profiles/LocalLensTranslate-GitHubInstall.mobileconfig
