@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <false/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Install LocalLens</string>
+            <key>PayloadDescription</key>
+            <string>Adds a Home Screen installer link for the SideStore-compatible LocalLens Translate IPA.</string>
+            <key>PayloadDisplayName</key>
+            <string>LocalLens SideStore Installer</string>
+            <key>PayloadIdentifier</key>
+            <string>com.locallens.sideload.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>2D1409DB-39F3-48DF-BBD9-827F8BF69E54</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <false/>
+            <key>URL</key>
+            <string>https://iamfearlessai.github.io/Translate/</string>
+        </dict>
+        <dict>
+            <key>FullScreen</key>
+            <false/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>LocalLens IPA</string>
+            <key>PayloadDescription</key>
+            <string>Adds a Home Screen link that downloads the SideStore-compatible IPA directly.</string>
+            <key>PayloadDisplayName</key>
+            <string>LocalLens IPA Download</string>
+            <key>PayloadIdentifier</key>
+            <string>com.locallens.sideload.ipa.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>07B5203E-3C84-4E38-9D32-A53187E75C36</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <false/>
+            <key>URL</key>
+            <string>https://github.com/IamFearlessAI/Translate/releases/latest/download/LocalLensTranslate-SideStore.ipa</string>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>Installs Home Screen links for downloading and installing the SideStore-compatible LocalLens Translate app.</string>
+    <key>PayloadDisplayName</key>
+    <string>LocalLens Translate SideStore Installer</string>
+    <key>PayloadIdentifier</key>
+    <string>com.locallens.sideload.profile</string>
+    <key>PayloadOrganization</key>
+    <string>IamFearlessAI</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>06F6EF8F-D1F9-4375-9D8F-8B0FC9F07F5D</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+

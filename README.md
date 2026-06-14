@@ -21,6 +21,7 @@ Important iOS constraints:
 - `.github/workflows/build-sideload-ipa.yml` - GitHub Actions cloud build for creating a SideStore/AltStore IPA.
 - `GitHubPages/` - GitHub Pages installer site and OTA manifest template.
 - `Profiles/LocalLensTranslate-GitHubInstall.mobileconfig` - Settings-installable profile that adds a Home Screen installer link.
+- `Profiles/LocalLensTranslate-SideStoreInstall.mobileconfig` - Settings-installable profile for SideStore/AltStore download links.
 - `SIDELOADING.md` - SideStore and AltStore setup notes.
 - `DIRECT_TRANSFER.md` - Steps to create and transfer the `.ipa` to an iPhone.
 

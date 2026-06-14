@@ -44,6 +44,29 @@ LocalLens Translate
 
 Tap it to install. SideStore will sign the IPA locally using your Apple ID.
 
+## Install The Configuration Profile
+
+On iPhone, open this URL in Safari:
+
+```text
+https://iamfearlessai.github.io/Translate/LocalLensTranslate-SideStoreInstall.mobileconfig
+```
+
+Allow the profile download, then install it from:
+
+```text
+Settings > Profile Downloaded > Install
+```
+
+This adds two Home Screen links:
+
+```text
+Install LocalLens
+LocalLens IPA
+```
+
+The profile does not sign or install the native app by itself. It gives you direct iPhone links to the SideStore-compatible IPA and installer page.
+
 ## Direct IPA Install
 
 If you prefer direct IPA import from your iPhone, open this URL in Safari:
