@@ -1,0 +1,6 @@
+// Copy this file or edit it before building on macOS.
+// TEAM_ID is the 10-character Apple Developer Team ID.
+
+DEVELOPMENT_TEAM_ID = YOUR_TEAM_ID
+APP_BUNDLE_ID = com.yourcompany.locallenstranslate
+

@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100000000000000000001 /* LocalLensTranslateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000001 /* LocalLensTranslateApp.swift */; };
+		A00100000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000002 /* ContentView.swift */; };
+		A00100000000000000000003 /* TranslatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000003 /* TranslatorViewModel.swift */; };
+		A00100000000000000000004 /* LanguageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000004 /* LanguageOption.swift */; };
+		A00100000000000000000005 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000005 /* OCRService.swift */; };
+		A00100000000000000000006 /* TranslationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000006 /* TranslationEngine.swift */; };
+		A00100000000000000000007 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000007 /* ShareViewController.swift */; };
+		A00100000000000000000008 /* ShareRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000008 /* ShareRootView.swift */; };
+		A00100000000000000000009 /* SharedContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000009 /* SharedContentLoader.swift */; };
+		A00100000000000000000010 /* LanguageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000004 /* LanguageOption.swift */; };
+		A00100000000000000000011 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000005 /* OCRService.swift */; };
+		A00100000000000000000012 /* TranslationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000006 /* TranslationEngine.swift */; };
+		A00100000000000000000013 /* LocalLensShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A00300000000000000000002 /* LocalLensShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00400000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00500000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00600000000000000000002;
+			remoteInfo = LocalLensShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A00700000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A00100000000000000000013 /* LocalLensShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A00200000000000000000001 /* LocalLensTranslateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLensTranslateApp.swift; sourceTree = "<group>"; };
+		A00200000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00200000000000000000003 /* TranslatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewModel.swift; sourceTree = "<group>"; };
+		A00200000000000000000004 /* LanguageOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOption.swift; sourceTree = "<group>"; };
+		A00200000000000000000005 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		A00200000000000000000006 /* TranslationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEngine.swift; sourceTree = "<group>"; };
+		A00200000000000000000010 /* Main Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00200000000000000000011 /* LocalLensTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalLensTranslate.entitlements; sourceTree = "<group>"; };
+		A00200000000000000000007 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A00200000000000000000008 /* ShareRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRootView.swift; sourceTree = "<group>"; };
+		A00200000000000000000009 /* SharedContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContentLoader.swift; sourceTree = "<group>"; };
+		A00200000000000000000012 /* Extension Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00200000000000000000013 /* LocalLensShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalLensShareExtension.entitlements; sourceTree = "<group>"; };
+		A00300000000000000000001 /* LocalLensTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalLensTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00300000000000000000002 /* LocalLensShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LocalLensShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A00800000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A00800000000000000000002 /* LocalLensTranslate */,
+				A00800000000000000000003 /* LocalLensShareExtension */,
+				A00800000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00800000000000000000002 /* LocalLensTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				A00200000000000000000001 /* LocalLensTranslateApp.swift */,
+				A00200000000000000000002 /* ContentView.swift */,
+				A00200000000000000000003 /* TranslatorViewModel.swift */,
+				A00200000000000000000004 /* LanguageOption.swift */,
+				A00200000000000000000005 /* OCRService.swift */,
+				A00200000000000000000006 /* TranslationEngine.swift */,
+				A00200000000000000000010 /* Main Info.plist */,
+				A00200000000000000000011 /* LocalLensTranslate.entitlements */,
+			);
+			path = LocalLensTranslate;
+			sourceTree = "<group>";
+		};
+		A00800000000000000000003 /* LocalLensShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A00200000000000000000007 /* ShareViewController.swift */,
+				A00200000000000000000008 /* ShareRootView.swift */,
+				A00200000000000000000009 /* SharedContentLoader.swift */,
+				A00200000000000000000012 /* Extension Info.plist */,
+				A00200000000000000000013 /* LocalLensShareExtension.entitlements */,
+			);
+			path = LocalLensShareExtension;
+			sourceTree = "<group>";
+		};
+		A00800000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00300000000000000000001 /* LocalLensTranslate.app */,
+				A00300000000000000000002 /* LocalLensShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00600000000000000000001 /* LocalLensTranslate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00900000000000000000001 /* Build configuration list for PBXNativeTarget "LocalLensTranslate" */;
+			buildPhases = (
+				A01000000000000000000001 /* Sources */,
+				A01100000000000000000001 /* Frameworks */,
+				A01200000000000000000001 /* Resources */,
+				A00700000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A01300000000000000000001 /* PBXTargetDependency */,
+			);
+			name = LocalLensTranslate;
+			productName = LocalLensTranslate;
+			productReference = A00300000000000000000001 /* LocalLensTranslate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00600000000000000000002 /* LocalLensShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00900000000000000000002 /* Build configuration list for PBXNativeTarget "LocalLensShareExtension" */;
+			buildPhases = (
+				A01000000000000000000002 /* Sources */,
+				A01100000000000000000002 /* Frameworks */,
+				A01200000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalLensShareExtension;
+			productName = LocalLensShareExtension;
+			productReference = A00300000000000000000002 /* LocalLensShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00500000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A00600000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A00600000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A00900000000000000000003 /* Build configuration list for PBXProject "LocalLensTranslate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00800000000000000000001;
+			productRefGroup = A00800000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00600000000000000000001 /* LocalLensTranslate */,
+				A00600000000000000000002 /* LocalLensShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01200000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01200000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000001 /* LocalLensTranslateApp.swift in Sources */,
+				A00100000000000000000002 /* ContentView.swift in Sources */,
+				A00100000000000000000003 /* TranslatorViewModel.swift in Sources */,
+				A00100000000000000000004 /* LanguageOption.swift in Sources */,
+				A00100000000000000000005 /* OCRService.swift in Sources */,
+				A00100000000000000000006 /* TranslationEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000007 /* ShareViewController.swift in Sources */,
+				A00100000000000000000008 /* ShareRootView.swift in Sources */,
+				A00100000000000000000009 /* SharedContentLoader.swift in Sources */,
+				A00100000000000000000010 /* LanguageOption.swift in Sources */,
+				A00100000000000000000011 /* OCRService.swift in Sources */,
+				A00100000000000000000012 /* TranslationEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01100000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01100000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A01300000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00600000000000000000002 /* LocalLensShareExtension */;
+			targetProxy = A00400000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A01400000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A01400000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A01400000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocalLensTranslate/LocalLensTranslate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalLensTranslate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A01400000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocalLensTranslate/LocalLensTranslate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalLensTranslate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A01400000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = LocalLensShareExtension/LocalLensShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalLensShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A01400000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = LocalLensShareExtension/LocalLensShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalLensShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00900000000000000000001 /* Build configuration list for PBXNativeTarget "LocalLensTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01400000000000000000003 /* Debug */,
+				A01400000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00900000000000000000002 /* Build configuration list for PBXNativeTarget "LocalLensShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01400000000000000000005 /* Debug */,
+				A01400000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00900000000000000000003 /* Build configuration list for PBXProject "LocalLensTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01400000000000000000001 /* Debug */,
+				A01400000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00500000000000000000001 /* Project object */;
+}
